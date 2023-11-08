@@ -1,0 +1,7 @@
+nome = str(input('Nome Completo: '))
+print(nome.upper())
+print(nome.lower())
+sem_espaço = nome.replace(' ', '')
+print(len(sem_espaço))
+primeiro_nome = nome.split()
+print(primeiro_nome[0])

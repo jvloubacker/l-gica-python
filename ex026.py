@@ -1,0 +1,6 @@
+frase = str(input('Escreva uma frase: ')).upper()
+print('A letra A aparece:', frase[:1000].count('A'), 'vezes')
+posição_A = frase.find('A')
+print('A letra A aparece na:', posição_A+1, 'posição')
+último_A= frase.rfind('A')
+print(f'A última letra A aparece na:',último_A+1, 'posição')
