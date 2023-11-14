@@ -8,6 +8,7 @@ def area():
 
 
 area()
+
 #FUNÇÃO 2, AS VARIAVEIS FORA DA FUNÇÃO.
 '''def area(l,c):
     print('CONTROLE DE TERRENO')
