@@ -1,19 +1,19 @@
-jogador = dict()
+ficha = dict()
 partidas = list()
-totgols = 0
-jogador['nome'] = str(input("Digite o nome do jogador: "))
-part = int(input(f"Quantas partidas o {jogador['nome']} jogou? "))
-for c in range(0, part):
-    partidas.append(int(input(f"Quantos gols ele fez na partida {c}: ")))
-jogador['gols'] = partidas[:]
-jogador['total'] = sum(partidas)
+
+ficha['nome'] = str(input('Nome do jogador: '))
+part = int(input(f'Quantas partidas {ficha["nome"]} jogou? '))
+for c in range(part):
+    partidas.append(int(input(f'   Quantos gols na partida {c}? ')))
+    ficha['gols'] = partidas[:]
+    ficha['total'] = sum(partidas)
+print('-='* 20)
+print(ficha)
 print('-='*20)
-print(jogador)
-print('-='*20)
-for k, v in jogador.items():
+for k,v in ficha.items():
     print(f'O campo {k} tem o valor {v}')
 print('-='*20)
-print(f'O jogador {jogador["nome"]} jogou {part} partidas.')
-for i, v in enumerate(jogador["gols"]):
-    print(f'=> Na partida {i}, fez {v} gols.')
-print(f'Foi um total de {jogador["total"]}')
+print(f'O jogador {ficha["nome"]} jogou {part} partidas.')
+for c, n in enumerate(ficha['gols']):
+    print(f'    => Na partida {c}, fez {n} gols.')
+print(f'Foi um total de {ficha["total"]}')
